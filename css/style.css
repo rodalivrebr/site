@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar{
+  background-color: #F04e23;
+}
+
+.nav-link{
+  color: #ffffff;
+}
+
+.navbar-brand img{
+   padding:0;
+  width: 50px;
+}
