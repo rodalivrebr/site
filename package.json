@@ -1,0 +1,25 @@
+{
+  "name": "rodalivrebr",
+  "version": "1.0.0",
+  "description": "Projeto do site da Roda Livre - BR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodalivrebr/site.git"
+  },
+  "author": "Izadora Dias, Mariana Zangrossi, Natasha Morais, Thaylla Christine, Vanessa Ariel e Vanessa Ribeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodalivrebr/site/issues"
+  },
+  "homepage": "https://github.com/rodalivrebr/site#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "sass": "^1.14.3"
+  }
+}

@@ -1,19 +1,50 @@
-*{
+body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; }
 
-}
+.general {
+  border-top: 3px solid #A22B42;
+  color: #A22B42; }
 
-.navbar{
-  background-color: #F04e23;
-}
+.subject-one_title {
+  color: #A22B42; }
+.subject-one_text {
+  color: #898989; }
 
-.nav-link{
-  color: #ffffff;
-}
+.group-title {
+  text-transform: uppercase; }
 
-.navbar-brand img{
-   padding:0;
-  width: 50px;
-}
+.subject-one_project-one {
+  color: #DA5B30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-one_img {
+    width: 492px; }
+
+.subject-one_project-two {
+  color: #B01A40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-two_img {
+    width: 400px; }
+
+.subject-one_project-three {
+  color: #B01A40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-three_img {
+    width: 450px; }
+
+.subject-one_project-four {
+  color: #DA5B30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-four_img {
+    width: 400px; }
+
+/*# sourceMappingURL=style.css.map */
