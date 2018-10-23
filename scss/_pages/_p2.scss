@@ -1,1 +1,64 @@
+$cor-primaria: #F04e23;
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: $cor-primaria;
+  &-link {
+    color: #fff;
+  }&-brand img {
+    padding: 0;
+    width: 50px;
+  }
+}
+
+.projects{
+     align-items: center;
+}
+
+.card{ 
+   width: 65%;  
+   border-color: $cor-primaria;
+   align-items: center;
+  &-img-top{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 200px;
+  }&-title{
+    color: $cor-primaria;
+    font-size: 17px;
+  }&-body{
+    text-align: center;
+  }
+}
+
+.btn{
+    border: 1px solid $cor-primaria;
+    color: $cor-primaria;
+    border-radius: 20px;
+    width: 140px;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #F04e23;
+    color: #fff;
+    transition: 0.03;
+}
+  
+@media (min-width: 768px){
+}
+
+@media (min-width: 1440px){
+  .projects{
+      display: flex;
+      justify-content: baseline;
+  }
+}
+
+
+  
