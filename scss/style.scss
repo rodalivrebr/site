@@ -1,5 +1,6 @@
-@import "_helpers/variables.scss";
-@import "_helpers/mixins.scss";
-@import "_helpers/functions.scss";
+@import "_helpers/_variables.scss";
 
-@import "_layout/navbar.scss";
+@import "_base/_base.scss";
+
+@import "_layout/_navbar.scss";
+@import "_layout/_footer.scss";
