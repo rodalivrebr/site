@@ -1,8 +1,8 @@
 .navbar {
-  background-color: #F04e23;
+  background-color: $color-primary;
 
   &-link {
-    color: #fff;
+    color: $white;
   }
 
   &-brand img {
