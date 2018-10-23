@@ -1,0 +1,19 @@
+.subtitle {
+    width: 180px;
+    border-top: 3px solid $color-second;
+    margin: 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-second;
+
+    @media (min-width: 768px) {
+        width: 300px;
+        font-size: 22px;
+
+    }
+
+    &-div {
+        width: 100%;
+    }
+}
