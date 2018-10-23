@@ -1,0 +1,12 @@
+.navbar {
+  background-color: $color-primary;
+
+  &-link {
+    color: $white;
+  }
+
+  &-brand img {
+    padding: 0;
+    width: 50px;
+  }
+}
