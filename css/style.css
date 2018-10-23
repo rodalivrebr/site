@@ -1075,3 +1075,53 @@ h2 {
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.general {
+  border-top: 3px solid #A22B42;
+  color: #A22B42; }
+
+.subject-one_title {
+  color: #A22B42; }
+.subject-one_text {
+  color: #898989; }
+
+.group-title {
+  text-transform: uppercase; }
+
+.subject-one_project-one {
+  color: #DA5B30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-one_img {
+    width: 492px; }
+
+.subject-one_project-two {
+  color: #B01A40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-two_img {
+    width: 400px; }
+
+.subject-one_project-three {
+  color: #B01A40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-three_img {
+    width: 450px; }
+
+.subject-one_project-four {
+  color: #DA5B30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .subject-one_project-four_img {
+    width: 400px; }
+
+/*# sourceMappingURL=style.css.map */
