@@ -4,7 +4,8 @@
 }
 
 
-.subject-one {
+.subject-one,
+.subject-two {
   &_title {
     color: #A22B42;
   }
@@ -63,6 +64,37 @@
 
 .subject-one_project-four {
   color: #DA5B30;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 400px;
+  }
+}
+
+
+.subject-two {
+  background-color: #F4F4F4;
+}
+
+
+.subject-two_project-one {
+  color: #DA5B30;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 450px;
+  }
+}
+
+
+.subject-two_project-two {
+  color: #B01A40;
 
   display: flex;
   flex-direction: column;
