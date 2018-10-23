@@ -5,7 +5,9 @@
 
 
 .subject-one,
-.subject-two {
+.subject-two,
+.subject-three, 
+.subject-four {
   &_title {
     color: #A22B42;
   }
@@ -102,5 +104,18 @@
 
   &_img {
     width: 400px;
+  }
+}
+
+
+.subject-three_project-one {
+  color: #DA5B30;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 450px;
   }
 }
