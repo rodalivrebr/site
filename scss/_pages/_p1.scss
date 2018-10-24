@@ -2,112 +2,166 @@
 
 //HEADER
 
-.carousel{
- 
+//---- 425px ----
+.carousel {
+  padding-bottom: 0px;
+
+  .slide1 {
+
+   img {
+     opacity: 0;
+   }        
+
+    .carousel-caption{
+      color: $primary-color;
+      li {
+        padding: 0 7px;
+        font-size: 12px;
+        list-style: none;
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      h1 {
+        font-size: 15px;
+      }      
+      
+      p {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  } 
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: rgba(0, 0, 0, 0);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-image: none;
+  }
+  
+  .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: $primary-orange;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: $primary-orange;
+  }
+}
+
+
+//---- 768px ----
+
+@media (min-width:768px) {
+  .carousel {
+    
+
+    .slide1 {
+
+      img {
+      opacity: 100;
+      }
+
+      .carousel-caption {
+        padding: 0 30px;
+        
+        ul{
+        margin-bottom: 5px;
+        }
+
+        li {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 19px;
+        }
+        
+        p {
+          font-size: 15px;
+          text-align: center;
+        } 
+
+      }
+    }
+  } 
+}
+
+// ---- Tablet 1024px ----
+@media (min-width:1024px) {
+
+  .carousel {
+
+    .slide1 {
+           
+      .carousel-caption {
+
+        li {
+          padding: 0 7px;
+          font-size: 23px;
+        }
+      
+        h1 {
+          font-size: 30px;
+        }
+          
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    } 
+  }
+}
+
+// ---- Desktop 1440px ----
+@media(min-width:1440px) {
+  .carousel {
+  
     .slide1{
-      .carousel-caption{
+      .carousel-caption {
         color: $primary-color;
         padding-bottom: 0px;
-  
+
         li{
           list-style: none;
           display: inline-block;
           font-weight: bold;
           padding: 0 15px;
           text-align: center;
-          font-size: 25px;
+          font-size: 40px;
         }
-  
-        ul{
+
+        ul {
           padding: 0px;
         }
-  
+
         h1 {
           font-size: 36px;
         }
-  
+
         p {
-          font-size: 25px;
+          font-size: 30px;
           text-align: center;
         }
-        
+
       }
     }
-  
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 100px;
-      width: 100px;
-      outline: rgba(0, 0, 0, 0);
-      background-size: 100%, 100%;
-      border-radius: 50%;
-      border: 1px solid rgba(0, 0, 0, 0);
-      background-image: none;
-    }
-    
-    .carousel-control-next-icon:after
-    {
-      content: '>';
-      font-size: 55px;
-      color: $primary-color;
-    }
-    
-    .carousel-control-prev-icon:after {
-      content: '<';
-      font-size: 55px;
-      color: $primary-color;
-    }
   }
-  
-  //Para mobile 425px até 767px
-  @media (min-width:425px) and (max-width: 766px) {
-    .carousel{
-       .slide1{
-        img{
-          opacity: 0;
-        }        
-        .carousel-caption{
-  
-          li{
-            padding: 0 7px;
-            font-size: 12px;
-          }
-  
-          h1 {
-            font-size: 15px;
-          }
-            
-          p {
-            font-size: 12px;
-            text-align: center;
-          }
-        }
-      } 
-    }
-  }
-  
-  @media (max-width:768px){
-    .carousel{
-       .slide1{
-             
-        .carousel-caption{
-          li{
-          padding: 0 7px;
-          font-size: 12px;
-        }
-  
-        h1 {
-          font-size: 15px;
-        }
-          
-        p {
-          font-size: 12px;
-          text-align: center;
-        }
-        }
-      } 
-    }
-  }
+}
   
   
 // ABOUT SECTION 
