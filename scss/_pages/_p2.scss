@@ -1,4 +1,5 @@
-$cor-primaria: #F04e23;
+$primary-color: #F04e23;
+$white: #fff;
 
 * {
     -webkit-box-sizing: border-box;
@@ -7,9 +8,9 @@ $cor-primaria: #F04e23;
     padding: 0;
   }
   .navbar {
-    background-color: $cor-primaria;
+    background-color: $primary-color;
   &-link {
-    color: #fff;
+    color: $white;
   }&-brand img {
     padding: 0;
     width: 50px;
@@ -24,14 +25,14 @@ $cor-primaria: #F04e23;
 
 .card{ 
    width: 325px; 
-   border-color: #fff;
+   border-color: $white;
    align-items: center;
   &-img-top{
     margin-top: 20px;
     border-radius: 50%;
     width: 200px;
   }&-title{
-    color: $cor-primaria;
+    color: $primary-color;
     font-size: 17px;
     height: 37px;
     align-items: center;
@@ -42,15 +43,15 @@ $cor-primaria: #F04e23;
 }
 
 .btn{
-    border: 1px solid $cor-primaria;
-    color: $cor-primaria;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     border-radius: 20px;
     width: 140px;
     align-items: center;
 }
 .btn:hover{
-    background-color: #F04e23;
-    color: #fff;
+    background-color: $primary-color;
+    color: $white;
     transition: 0.03;
 }
   
