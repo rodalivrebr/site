@@ -3,47 +3,53 @@
 
   .navbar-nav .nav-item a.nav-link {
     color: $white;
-    margin: 0 30px;
+    margin: 0 27px;
     padding: 0px;
     position: relative;
 
-    &:hover::before{
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 1;
-      margin-left: 50%;
-      background-color: white;
-      width: 50%;
-      height: 2px;
-      animation-name: showUnderline;
-      animation-duration: 0.3s;
-      }
-      
-      &:hover::after{
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 1;
-          right: 0;
-          margin-right: 50%;
-          background-color: white;
-          width: 50%;
-          height: 2px;
-          animation-name: showUnderline;
-          animation-duration: 0.3s;
-          
-      }
-  
-      @keyframes showUnderline{
-          0%{
-              width: 0%;
-          }
-          100%{
-              width: 50%;
-          }
-      }
+    @media (min-width: 600px) {
+        margin: 0 30px;
+    }
+
+    @media (min-width: 576px) {
+
+        &:hover::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 1;
+            margin-left: 50%;
+            background-color: white;
+            width: 50%;
+            height: 2px;
+            animation-name: showUnderline;
+            animation-duration: 0.3s;
+        }
+        
+        &:hover::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 1;
+            right: 0;
+            margin-right: 50%;
+            background-color: white;
+            width: 50%;
+            height: 2px;
+            animation-name: showUnderline;
+            animation-duration: 0.3s;
+        }
+    
+        @keyframes showUnderline{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+    }
   }
 
   &-brand img {
