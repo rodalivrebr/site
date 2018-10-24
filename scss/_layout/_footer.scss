@@ -3,7 +3,7 @@
     font-family: $raleway;
 
     @media (min-width: 768px) {
-        border-top: 1px solid gray;
+        border-top: 1px solid $text-color;
     }
 
     @media (min-width: 1024px) {
@@ -16,10 +16,11 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        align-items: center;
         padding: 0 40px 0 40px;
 
         @media (min-width: 768px) {
-            padding: 20px 30px;
+            padding: 20px 28px;
         }
 
         @media (min-width: 1024px) {
@@ -33,7 +34,7 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-        background-color: $color-primary;
+        background-color: $primary-color;
         color: $white;
         padding: 5px 0;
         margin-bottom: 0px;
@@ -58,8 +59,8 @@
 
         @media (min-width: 768px) {
             padding: 10px 0;
-            background-color: white;
-            color: $color-second;
+            background-color: $white;
+            color: $secondary-color;
         }
 
         
@@ -91,21 +92,19 @@
     }
 
     .contact {
-        border-bottom: 1px solid $color-second;
+        border-bottom: 1px solid $secondary-color;
         padding: 10px 0;
         margin: 0 auto;
         width: 70%;
 
         @media (min-width: 768px) {
             border-bottom: none;
-            //border-left: 2px solid $color-second;
             width: fit-content;
             margin: 0 30px;
         }
 
         @media (min-width: 992px) {
             margin: 0 30px;
-            //text-align: center;
         }
 
         p {
@@ -150,19 +149,6 @@
             }
         }
 
-        // @media (min-width: 768px) {
-        //     display: block;
-        //     width: 100%;
-        //     text-align: center;
-        //     margin-top: 20px;
-        // }
-
-        // @media (min-width: 1024px) {
-        //     width: fit-content;
-        //     margin-left: 80px;
-        //     margin-top: 0px;
-        // }
-
         img {
             width: 90px;
         }
@@ -175,7 +161,7 @@
         font-size: 14px;
         border-top: 1px solid gray;
         padding: 2px 0;
-        background-color: #e8e8e8;
+        background-color: $gray;
 
         @media (min-width: 1024px) {
             order: 3;

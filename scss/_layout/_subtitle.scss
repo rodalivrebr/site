@@ -1,23 +1,20 @@
 .subtitle {
-    @include subtitle($color-second);
+        width: 180px;
+        border-top: 3px solid $secondary-color;
+        margin: 20px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: right;
+        color: $secondary-color;
+    
+        @media (min-width: 768px) {
+            width: 300px;
+            font-size: 22px;
+    
+        }
+    
+        &-div {
+            width: 100%;
+        }
 }
 
-@mixin subtitle($color){
-    width: 180px;
-    border-top: 3px solid $color;
-    margin: 20px 0;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: right;
-    color: $color;
-
-    @media (min-width: 768px) {
-        width: 300px;
-        font-size: 22px;
-
-    }
-
-    &-div {
-        width: 100%;
-    }
-}

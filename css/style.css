@@ -1,3 +1,4 @@
+/*TESTE*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +20,7 @@
     width: 100%; }
 
 .navbar {
-  background-color: #F04e23; }
+  background-color: #F04E23; }
   .navbar .navbar-nav .nav-item a.nav-link {
     color: #ffffff;
     margin: 0 27px;
@@ -70,7 +71,7 @@
   font-family: "Raleway", Arial; }
   @media (min-width: 768px) {
     .footer {
-      border-top: 1px solid gray; } }
+      border-top: 1px solid #898989; } }
   @media (min-width: 1024px) {
     .footer {
       display: flex;
@@ -80,10 +81,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     padding: 0 40px 0 40px; }
     @media (min-width: 768px) {
       .footer-container {
-        padding: 20px 30px; } }
+        padding: 20px 28px; } }
     @media (min-width: 1024px) {
       .footer-container {
         padding: 10px 0px 40px 90px;
@@ -93,7 +95,7 @@
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    background-color: #F04e23;
+    background-color: #F04E23;
     color: #ffffff;
     padding: 5px 0;
     margin-bottom: 0px; }
@@ -110,7 +112,7 @@
     @media (min-width: 768px) {
       .footer .title {
         padding: 10px 0;
-        background-color: white;
+        background-color: #ffffff;
         color: #A22B42; } }
   .footer .facebook {
     order: 3;
@@ -179,13 +181,13 @@
     font-size: 14px;
     border-top: 1px solid gray;
     padding: 2px 0;
-    background-color: #e8e8e8; }
+    background-color: #ccc; }
     @media (min-width: 1024px) {
       .footer .copyright {
         order: 3; } }
 
 .navbar {
-  background-color: #F04e23; }
+  background-color: #F04E23; }
   .navbar .navbar-nav .nav-item a.nav-link {
     color: #ffffff;
     margin: 0 27px;
@@ -230,37 +232,5 @@
     @media (min-width: 768px) {
       .navbar-brand img {
         width: 60px; } }
-
-h2 {
-  text-transform: uppercase;
-  color: #A22B42;
-  font-size: 18px;
-  margin-top: 5px; }
-
-h4 {
-  text-transform: uppercase;
-  color: #A22B42;
-  font-size: 18px; }
-
-.container {
-  max-width: 80%; }
-
-.about .col-lg-4 {
-  margin-bottom: 25px; }
-.about .top-line {
-  border-top: 3px solid #A22B42;
-  margin-top: 25px;
-  max-width: 50%;
-  min-width: 270px; }
-.about-quote {
-  color: #A22B42;
-  font-size: 36px;
-  margin-top: 100px; }
-.about-content {
-  margin: 30px 0 50px; }
-.about-founders {
-  margin-top: 25px; }
-  .about-founders-p {
-    margin: 50px 0 60px; }
 
 /*# sourceMappingURL=style.css.map */
