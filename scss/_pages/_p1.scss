@@ -1,14 +1,125 @@
 // MOBILE FIRST
+
+//HEADER
+
+.carousel{
+ 
+    .slide1{
+      .carousel-caption{
+        color: $primary-color;
+        padding-bottom: 0px;
+  
+        li{
+          list-style: none;
+          display: inline-block;
+          font-weight: bold;
+          padding: 0 15px;
+          text-align: center;
+          font-size: 25px;
+        }
+  
+        ul{
+          padding: 0px;
+        }
+  
+        h1 {
+          font-size: 36px;
+        }
+  
+        p {
+          font-size: 25px;
+          text-align: center;
+        }
+        
+      }
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      outline: rgba(0, 0, 0, 0);
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0);
+      background-image: none;
+    }
+    
+    .carousel-control-next-icon:after
+    {
+      content: '>';
+      font-size: 55px;
+      color: $primary-color;
+    }
+    
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: $primary-color;
+    }
+  }
+  
+  //Para mobile 425px até 767px
+  @media (min-width:425px) and (max-width: 766px) {
+    .carousel{
+       .slide1{
+        img{
+          opacity: 0;
+        }        
+        .carousel-caption{
+  
+          li{
+            padding: 0 7px;
+            font-size: 12px;
+          }
+  
+          h1 {
+            font-size: 15px;
+          }
+            
+          p {
+            font-size: 12px;
+            text-align: center;
+          }
+        }
+      } 
+    }
+  }
+  
+  @media (max-width:768px){
+    .carousel{
+       .slide1{
+             
+        .carousel-caption{
+          li{
+          padding: 0 7px;
+          font-size: 12px;
+        }
+  
+        h1 {
+          font-size: 15px;
+        }
+          
+        p {
+          font-size: 12px;
+          text-align: center;
+        }
+        }
+      } 
+    }
+  }
+  
+  
 // ABOUT SECTION 
 h2{
     text-transform: uppercase;
-    color: $secondary-burgundy;
+    color: $secondary-color;
     font-size: 18px;
     margin-top: 5px;
 }
 h4{
     text-transform: uppercase;
-    color: $secondary-burgundy;
+    color: $secondary-color;
     font-size:18px;  
 }
 .container{
@@ -19,13 +130,13 @@ h4{
         margin-bottom:25px;
     }
     .top-line{
-        border-top: 3px solid $secondary-burgundy;
+        border-top: 3px solid $secondary-color;
         margin-top: 25px;
         max-width: 50%;
         min-width: 270px;
     }
     &-quote{
-        color: $secondary-burgundy;
+        color: $secondary-color;
         font-size: 36px;
         margin-top: 100px;
     }
@@ -40,3 +151,5 @@ h4{
     }
 }
 
+
+  
