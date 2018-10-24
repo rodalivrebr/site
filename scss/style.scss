@@ -1,7 +1,12 @@
-@import "_helpers/_variables.scss";
 
+@import "_helpers/variables";
+@import "_helpers/mixins";
 @import "_base/_base.scss";
 
+@import "_layout/_subtitle";
 @import "_layout/_navbar";
 @import "_layout/_footer";
 
+@import "_layout/navbar";
+@import "_pages/p1";
+@import "_pages/p4";
