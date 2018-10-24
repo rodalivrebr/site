@@ -6,7 +6,7 @@
  
     .slide1{
       .carousel-caption{
-        color: #F04e23;
+        color: $primary-color;
         padding-bottom: 0px;
   
         li{
@@ -49,13 +49,13 @@
     {
       content: '>';
       font-size: 55px;
-      color: #F04e23;
+      color: $primary-color;
     }
     
     .carousel-control-prev-icon:after {
       content: '<';
       font-size: 55px;
-      color: #F04e23;
+      color: $primary-color;
     }
   }
   
