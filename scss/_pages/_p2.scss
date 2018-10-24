@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
   }
+  body{
+      font-family: $raleway;
+  }
   .navbar {
     background-color: $primary-color;
   &-link {
@@ -72,27 +75,38 @@
 }
 
 // ABOUT SECTION
-h4{
+h2{
     text-transform: uppercase;
-    color: $secondary-color;
+    color: $white;
     font-size:18px;  
 }
 .container{
     max-width: 80%;
 }
 .methodology{
+    background-color: $primary-color;
+    // padding-top: 125px;
+    height: 100vh;
     .top-line{
-        border-top: 3px solid $secondary-color;
+        border-top: 3px solid $white;
         margin-top: 25px;
         max-width: 50%;
         min-width: 270px;
     }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 50px 0 100px;
+    }
+    
     &-quote{
-        color: $secondary-color;
+        color: $white;
         font-size: 36px;
         margin-top: 100px;
     }
     p{
-        margin: 50px 0 60px;
+        // margin: 50px 0 60px;
+        color: $white;
     }
 }
