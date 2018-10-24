@@ -1,11 +1,15 @@
 .subtitle {
+    @include subtitle($color-second);
+}
+
+@mixin subtitle($color){
     width: 180px;
-    border-top: 3px solid $color-second;
+    border-top: 3px solid $color;
     margin: 20px 0;
     font-size: 20px;
     text-transform: uppercase;
     text-align: right;
-    color: $color-second;
+    color: $color;
 
     @media (min-width: 768px) {
         width: 300px;
