@@ -1,4 +1,77 @@
+// $primary-color: #F04e23;
+// $white: #fff;
 
+// NAVBAR
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background-color: $primary-color;
+  &-link {
+    color: $white;
+  }&-brand img {
+    padding: 0;
+    width: 50px;
+  }
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{ 
+   width: 325px; 
+   border-color: $white;
+   align-items: center;
+  &-img-top{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 200px;
+  }&-title{
+    color: $primary-color;
+    font-size: 17px;
+    height: 37px;
+    align-items: center;
+    display: flex;
+  }&-body{
+    text-align: center;
+  }
+}
+
+.btn{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 20px;
+    width: 140px;
+    align-items: center;
+}
+.btn:hover{
+    background-color: $primary-color;
+    color: $white;
+    transition: 0.03;
+}
+  
+@media (min-width: 768px){
+}
+
+@media (min-width: 1024px){
+  .projects{
+    width: 95%
+  }
+}
+
+@media (min-width: 1040px){
+  .projects{
+    width: 100%;
+  }
+}
+
+// ABOUT SECTION
 h4{
     text-transform: uppercase;
     color: $secondary-color;
@@ -23,4 +96,3 @@ h4{
         margin: 50px 0 60px;
     }
 }
-
