@@ -1,13 +1,21 @@
-// @mixin lg-flex() {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+// Placeholders
+%lg-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 .general {
   border-top: 3px solid #A22B42;
   color: #A22B42;
+}
+
+
+.group {
+  &-title {
+    text-transform: uppercase;
+  }
 }
 
 
@@ -25,145 +33,114 @@
 }
 
 
-.group {
-  &-title {
-    text-transform: uppercase;
-  }
-}
-
-
-.subject-one_project-one {
-  color: #DA5B30;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 492px;
-  }
-}
-
-
-.subject-one_project-two {
-  color: #B01A40;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 400px;
-  }
-}
-
-
-.subject-one_project-three {
-  color: #B01A40;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 450px;
-  }
-}
-
-
-.subject-one_project-four {
-  color: #DA5B30;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 400px;
-  }
-}
-
-
 .subject-two,
 .subject-four {
   background-color: #F4F4F4;
 }
 
 
-.subject-two_project-one {
-  color: #DA5B30;
+.subject-one {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+      &_img {
+        width: 450px;
+      }
+    }
 
-  &_img {
-    width: 450px;
+    &-two {
+      color: #B01A40;
+      @extend %lg-flex;
+
+      &_img {
+        width: 400px;
+      }
+    }
+
+    &-three {
+      color: #B01A40;
+      @extend %lg-flex;
+
+      &_img {
+        width: 450px;
+      }
+    }
+
+    &-four {
+      color: #DA5B30;
+      @extend %lg-flex;
+
+      &_img {
+        width: 400px;
+      }
+    }
+
   }
 }
 
 
-.subject-two_project-two {
-  color: #B01A40;
+.subject-two {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+      &_img {
+        width: 450px;
+      }
+    }
 
-  &_img {
-    width: 400px;
+    &-two {
+      color: #B01A40;
+      @extend %lg-flex;
+
+      &_img {
+        width: 400px;
+      }
+    }
   }
 }
 
 
-.subject-three_project-one {
-  color: #DA5B30;
+.subject-three {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+      &_img {
+        width: 450px;
+      }
+    }
 
-  &_img {
-    width: 450px;
-  }
-}
+    &-two {
+      color: #A22B42;
+      @extend %lg-flex;
 
+      &_img {
+        width: 400px;
+      }
+    }
 
-.subject-three_project-two {
-  color: #A22B42;
+    &-three {
+      color: #DA5B30;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+      &_img {
+        width: 400px;
+      }
+    }
 
-  &_img {
-    width: 400px;
-  }
-}
+    &-four {
+      color: #A22B42;
+      @extend %lg-flex;
 
-
-.subject-three_project-three {
-  color: #DA5B30;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 450px;
-  }
-}
-
-
-.subject-three_project-four {
-  color: #A22B42;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 350px;
+      &_img {
+        width: 350px;
+      }
+    }
   }
 }
 
@@ -172,61 +149,38 @@
   &_project {
     &-one {
       color: #DA5B30;
+      @extend %lg-flex;
 
       &_img {
         width: 450px;
       }
     }
-  }
-}
 
-.subject-four_project-one {
-  color: #DA5B30;
+    &-two {
+      color: #B01A40;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+      &_img {
+        width: 400px;
+      }
+    }
 
-  &_img {
-    width: 450px;
-  }
-}
+    &-three {
+      color: #A22B42;
+      @extend %lg-flex;
 
+      &_img {
+        width: 450px;
+      }
+    }
 
-.subject-four_project-two {
-  color: #B01A40;
+    &-four {
+      color: #DA5B30;
+      @extend %lg-flex;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 400px;
-  }
-}
-
-
-.subject-four_project-three {
-  color: #A22B42;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 450px;
-  }
-}
-
-
-.subject-four_project-four {
-  color: #DA5B30;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &_img {
-    width: 400px;
+      &_img {
+        width: 400px;
+      }
+    }
   }
 }
