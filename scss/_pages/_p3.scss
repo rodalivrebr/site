@@ -1,3 +1,10 @@
+// @mixin lg-flex() {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+
 .general {
   border-top: 3px solid #A22B42;
   color: #A22B42;
@@ -6,7 +13,7 @@
 
 .subject-one,
 .subject-two,
-.subject-three, 
+.subject-three,
 .subject-four {
   &_title {
     color: #A22B42;
@@ -117,5 +124,44 @@
 
   &_img {
     width: 450px;
+  }
+}
+
+
+.subject-three_project-two {
+  color: #A22B42;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 400px;
+  }
+}
+
+
+.subject-three_project-three {
+  color: #DA5B30; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 450px;
+  }
+}
+
+
+.subject-three_project-four {
+  color: #A22B42;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_img {
+    width: 350px;
   }
 }
