@@ -1,0 +1,35 @@
+
+
+.brief {
+  .line {
+    .column {
+      padding: 21px 88px;
+      .author{
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  } 
+}
+
+
+
+
+
+.partners{
+  display: flex;
+  justify-content: center;
+  .logo{
+    filter: grayscale(100%);
+
+  }
+
+
+}
+
+.partners{
+  .logo:hover{
+  filter: grayscale(0%);
+  
+  }
+}
