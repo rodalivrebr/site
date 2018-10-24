@@ -6,7 +6,6 @@ $cor-primaria: #F04e23;
     margin: 0;
     padding: 0;
   }
-  
   .navbar {
     background-color: $cor-primaria;
   &-link {
@@ -18,12 +17,14 @@ $cor-primaria: #F04e23;
 }
 
 .projects{
-     align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card{ 
-   width: 65%;  
-   border-color: $cor-primaria;
+   width: 325px; 
+   border-color: #fff;
    align-items: center;
   &-img-top{
     margin-top: 20px;
@@ -32,6 +33,9 @@ $cor-primaria: #F04e23;
   }&-title{
     color: $cor-primaria;
     font-size: 17px;
+    height: 37px;
+    align-items: center;
+    display: flex;
   }&-body{
     text-align: center;
   }
@@ -53,13 +57,18 @@ $cor-primaria: #F04e23;
 @media (min-width: 768px){
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1024px){
   .projects{
-      display: flex;
-      justify-content: baseline;
+    width: 95%
   }
 }
 
+@media (min-width: 1040px){
+  .projects{
+    width: 100%;
+  }
+}
+ 
 
   
 h4{

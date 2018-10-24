@@ -510,6 +510,13 @@ h4 {
 .card-title {
   color: #F04e23;
   font-size: 17px;
+  height: 37px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-body {
@@ -533,7 +540,7 @@ h4 {
   transition: 0.03;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -541,6 +548,13 @@ h4 {
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
+    width: 95%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .projects {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
