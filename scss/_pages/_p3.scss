@@ -1,40 +1,9 @@
-// Mixins
-@mixin font-size ($font-size) {
-  font-size: $font-size;
-}
-
-@mixin width-img ($widht-img) {
-  width: $widht-img;
-}
-
-@mixin lg-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-// Placeholders
-%align-img {
-  align-items: center;
-}
-
-%max-width {
-  max-width: 100%;
-}
-
-@mixin sm-flex {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-}
-
-
 .general {
   font-size: 16px;
 
   &_title {
-    border-top: 3px solid #A22B42;
-    color: #A22B42;
+    border-top: 3px solid $secondary-color;
+    color: $secondary-color;
   }
 }
 
@@ -53,11 +22,11 @@
   @include font-size(14px);
 
   &_title {
-    color: #A22B42;
+    color: $secondary-color;
   }
 
   &_text {
-    color: #898989;
+    color: $text-color;
   }
 }
 
@@ -209,7 +178,7 @@
     }
 
     &-two {
-      color: #A22B42;
+      color: $secondary-color;
       @include lg-flex();
 
       &_title {
@@ -245,7 +214,7 @@
     }
 
     &-four {
-      color: #A22B42;
+      color: $secondary-color;
       @include lg-flex();
 
       &_title {
@@ -304,7 +273,7 @@
     }
 
     &-three {
-      color: #A22B42;
+      color: $secondary-color;
       @include lg-flex();
 
       &_title {
@@ -338,21 +307,5 @@
         @include width-img(300px);
       }
     }
-  }
-}
-
-
-
-@media screen and (max-width: 425px) {
-  .row-st {
-    flex-wrap: wrap-reverse;
-  }
-
-  .row-nd {
-    flex-wrap: wrap;
-  }
-
-  .col {
-    flex-basis: auto;
   }
 }
