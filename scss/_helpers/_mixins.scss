@@ -1,0 +1,20 @@
+// Mixins: Página 3
+@mixin font-size ($font-size) {
+  font-size: $font-size;
+}
+
+@mixin width-img ($widht-img) {
+  width: $widht-img;
+}
+
+@mixin lg-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin sm-flex {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}

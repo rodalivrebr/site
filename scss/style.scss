@@ -1,8 +1,9 @@
-@import "_helpers/_variables";
+@import "_helpers/variables";
+@import "_helpers/mixins";
+@import "_helpers/placeholders";
+@import "_helpers/medias";
 
-@import "_base/_base";
+@import "_base/base";
 
-// @import "_layout/navbar";
-// @import "_layout/footer";
-
+// Página 3
 @import "_pages/p3";
