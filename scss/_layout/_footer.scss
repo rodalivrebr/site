@@ -1,0 +1,170 @@
+.footer {
+    width: 100%;
+    font-family: $raleway;
+
+    @media (min-width: 768px) {
+        border-top: 1px solid $text-color;
+    }
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px 0 40px;
+
+        @media (min-width: 768px) {
+            padding: 20px 28px;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 10px 0px 40px 90px;
+            align-items: center;
+            width: 80%;
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        background-color: $primary-color;
+        color: $white;
+        padding: 5px 0;
+        margin-bottom: 0px;
+
+        &-mobile {
+            display: block;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+
+        }
+
+        &-desktop {
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            padding: 10px 0;
+            background-color: $white;
+            color: $secondary-color;
+        }
+
+        
+    }
+
+    .facebook {
+        order: 3;
+        width: 55%;
+        text-align: center;
+        padding: 10px 0;
+
+        @media (min-width: 768px) {
+            order: 1;
+            padding: 0;
+            width: fit-content;
+        }
+
+        &-icon {
+            width: 30px;
+        }
+
+        &-link {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: inline;
+            }
+        }
+    }
+
+    .contact {
+        border-bottom: 1px solid $secondary-color;
+        padding: 10px 0;
+        margin: 0 auto;
+        width: 70%;
+
+        @media (min-width: 768px) {
+            border-bottom: none;
+            width: fit-content;
+            margin: 0 30px;
+        }
+
+        @media (min-width: 992px) {
+            margin: 0 30px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 15px;
+
+            @media (min-width: 768px) {
+                padding-left: 10px;
+            }
+        }
+
+        &-luciana {
+            order: 1;
+        }
+
+        &-irene {
+            order: 2;
+        }
+    }
+
+    .logo {
+        display: none;
+        order: 5;
+
+        &-mobile {
+            @media (min-width: 768px) {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+            @media (min-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &-desktop {
+            display: none;
+            @media (min-width: 1024px) {
+                display: block;
+                order: 2;
+            }
+        }
+
+        img {
+            width: 90px;
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        order: 4;
+        font-size: 14px;
+        border-top: 1px solid gray;
+        padding: 2px 0;
+        background-color: $gray;
+
+        @media (min-width: 1024px) {
+            order: 3;
+        }
+    }
+}
