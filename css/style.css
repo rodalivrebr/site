@@ -566,7 +566,10 @@ h2 {
 
 .methodology {
   background-color: #F04E23;
-  height: 100vh;
+}
+
+.methodology .h2-header {
+  padding-top: 100px;
 }
 
 .methodology .top-line {
@@ -587,12 +590,18 @@ h2 {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 50px 0 100px;
+  margin-top: 100px;
+}
+
+.methodology .container > .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .methodology-quote {
   color: #fff;
   font-size: 36px;
-  margin-top: 100px;
 }
 
 .methodology p {

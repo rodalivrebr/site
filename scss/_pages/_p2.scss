@@ -86,7 +86,10 @@ h2{
 .methodology{
     background-color: $primary-color;
     // padding-top: 125px;
-    height: 100vh;
+    // height: 100vh;
+    .h2-header{
+        padding-top: 100px;
+    }
     .top-line{
         border-top: 3px solid $white;
         margin-top: 25px;
@@ -98,12 +101,15 @@ h2{
         justify-content: space-between;
         align-items: flex-end;
         padding: 50px 0 100px;
+        margin-top: 100px;
+    }
+    .container > .row{
+        align-items: flex-end;
     }
     
     &-quote{
         color: $white;
         font-size: 36px;
-        margin-top: 100px;
     }
     p{
         // margin: 50px 0 60px;
