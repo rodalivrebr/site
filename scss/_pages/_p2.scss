@@ -1,5 +1,3 @@
-// $primary-color: #F04e23;
-// $white: #fff;
 
 // NAVBAR
 * {
@@ -8,19 +6,9 @@
     margin: 0;
     padding: 0;
   }
-<<<<<<< HEAD
 
   body{
       font-family: $raleway;
-=======
-  .navbar {
-    background-color: $cor-primaria;
-  &-link {
-    color: #fff;
-  }&-brand img {
-    padding: 0;
-    width: 50px;
->>>>>>> adicão propriedades @media
   }
   .navbar {
     background-color: $white;
@@ -41,10 +29,14 @@
 .card{ 
    width: 325px; 
 <<<<<<< HEAD
+<<<<<<< HEAD
    border-color: $white;
 =======
    border-color: #fff;
 >>>>>>> adicão propriedades @media
+=======
+   border-color: $white;
+>>>>>>> mudei o nome das variaveis
    align-items: center;
   &-img-top{
     margin-top: 20px;
