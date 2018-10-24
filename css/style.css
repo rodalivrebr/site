@@ -472,11 +472,11 @@ body {
 }
 
 .navbar {
-  background-color: #F04E23;
+  background-color: #fff;
 }
 
-.navbar-link {
-  color: #fff;
+.navbar .nav-link {
+  color: #F04E23;
 }
 
 .navbar-brand img {

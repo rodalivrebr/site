@@ -8,17 +8,18 @@
     margin: 0;
     padding: 0;
   }
+
   body{
       font-family: $raleway;
   }
   .navbar {
-    background-color: $primary-color;
-  &-link {
-    color: $white;
-  }&-brand img {
-    padding: 0;
-    width: 50px;
-  }
+    background-color: $white;
+    .nav-link {
+        color: $primary-color;
+    }&-brand img {
+        padding: 0;
+        width: 50px;
+    }
 }
 
 .projects{
@@ -85,8 +86,7 @@ h2{
 }
 .methodology{
     background-color: $primary-color;
-    // padding-top: 125px;
-    // height: 100vh;
+
     .h2-header{
         padding-top: 50px;
     }
