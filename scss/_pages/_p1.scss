@@ -1,8 +1,8 @@
 // MOBILE FIRST
 
-//HEADER
+// ---- HEADER ---- //
 
-//---- 425px ----
+//---- 425px ---- //
 .carousel {
   padding-bottom: 0px;
 
@@ -12,8 +12,7 @@
      opacity: 0;
    }        
 
-
-    .carousel-caption{
+   .carousel-caption {
       color: $primary-color;
       li {
         padding: 0 7px;
@@ -63,24 +62,22 @@
   }
 }
 
-
-//---- 768px ----
+//---- Tablet 768px ---- //
 
 @media (min-width:768px) {
   .carousel {
     
-
     .slide1 {
 
       img {
-      opacity: 100;
+        opacity: 100;
       }
 
       .carousel-caption {
         padding: 0 30px;
         
         ul{
-        margin-bottom: 5px;
+          margin-bottom: 5px;
         }
 
         li {
@@ -95,13 +92,12 @@
           font-size: 15px;
           text-align: center;
         } 
-
       }
     }
   } 
 }
 
-// ---- Tablet 1024px ----
+// ---- Tablet 1024px ---- //
 @media (min-width:1024px) {
 
   .carousel {
@@ -128,7 +124,7 @@
   }
 }
 
-// ---- Desktop 1440px ----
+// ---- Desktop 1440px ---- //
 @media(min-width:1440px) {
   .carousel {
   
@@ -158,50 +154,48 @@
           font-size: 30px;
           text-align: center;
         }
-
       }
     }
   }
 }
   
-  
 // ABOUT SECTION 
-h2{
-    text-transform: uppercase;
+h2 {
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-size: 18px;
+  margin-top: 5px;
+}
+h4 {
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-size:18px;  
+}
+.container {
+  max-width: 80%;
+}
+.about {
+  .col-lg-4 {
+    margin-bottom:25px;
+  }
+  .top-line {
+    border-top: 3px solid $secondary-color;
+    margin-top: 25px;
+    max-width: 50%;
+    min-width: 270px;
+  }
+  &-quote {
     color: $secondary-color;
-    font-size: 18px;
-    margin-top: 5px;
-}
-h4{
-    text-transform: uppercase;
-    color: $secondary-color;
-    font-size:18px;  
-}
-.container{
-    max-width: 80%;
-}
-.about{
-    .col-lg-4{
-        margin-bottom:25px;
+    font-size: 36px;
+    margin-top: 100px;
+  }
+  &-content {
+      margin: 30px 0 50px;
+  }
+  &-founders{
+    margin-top: 25px;
+    &-p{
+      margin: 50px 0 60px;
     }
-    .top-line{
-        border-top: 3px solid $secondary-color;
-        margin-top: 25px;
-        max-width: 50%;
-        min-width: 270px;
-    }
-    &-quote{
-        color: $secondary-color;
-        font-size: 36px;
-        margin-top: 100px;
-    }
-    &-content{
-        margin: 30px 0 50px;
-    }
-    &-founders{
-        margin-top: 25px;
-        &-p{
-            margin: 50px 0 60px;
-        }
-    }
+  }
 }
