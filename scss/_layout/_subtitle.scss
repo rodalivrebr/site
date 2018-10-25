@@ -1,16 +1,22 @@
 .subtitle {
-        width: 180px;
+        width: 270px;
         border-top: 3px solid $secondary-color;
-        margin: 20px 0;
-        font-size: 20px;
+        margin-top: 15px;
+        font-size: 16px;
         text-transform: uppercase;
         text-align: right;
         color: $secondary-color;
     
         @media (min-width: 768px) {
             width: 300px;
-            font-size: 22px;
-    
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 1440px){
+         width: 355px;
+         font-size: 18px;
+        
         }
     
         &-div {
