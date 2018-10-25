@@ -105,8 +105,9 @@ h2{
 .methodology{
     background-color: $primary-color;
 
-    .h2-header{
-        padding-top: 50px;
+    .h2-header h2{
+        @include font-h2;
+        color: white;
     }
     .top-line{
         border-top: 3px solid $white;
