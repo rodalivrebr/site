@@ -26,17 +26,18 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-.card{ 
-
+.card{
    width: 325px; 
    border-color: $white;
    align-items: center;
   &-img-top{
     margin-top: 20px;
     border-radius: 50%;
-    width: 200px;
-  }&-title{
+    width: 170px;
+    height: 170px;
+    }&-title{
     color: $primary-color;
+    font-weight: bold;
     font-size: 17px;
     height: 37px;
     align-items: center;
@@ -63,16 +64,18 @@ justify-content: center;
 }
 
 .btn{
-  border: 1px solid $primary-color;
+  border: 1.2px solid $primary-color;
   color: $primary-color;
   border-radius: 20px;
   width: 140px;
   align-items: center;
+  font-weight: bold;
 }
 .btn:hover{
   background-color: $primary-color;
   color: $white;
   transition: 0.03;
+  font-weight: bold;
 }
 
 @media (min-width: 768px){
