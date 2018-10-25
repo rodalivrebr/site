@@ -12,22 +12,27 @@
   }
 
 .projects{
+  margin: 50px 0;
+}
+
+.imagens{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
 
-.card{ 
-
+.card{
    width: 325px; 
    border-color: $white;
    align-items: center;
   &-img-top{
     margin-top: 20px;
     border-radius: 50%;
-    width: 200px;
-  }&-title{
+    width: 170px;
+    height: 170px;
+    }&-title{
     color: $primary-color;
+    font-weight: bold;
     font-size: 17px;
     height: 37px;
     align-items: center;
@@ -54,29 +59,38 @@ justify-content: center;
 }
 
 .btn{
-  border: 1px solid $primary-color;
+  border: 1.2px solid $primary-color;
   color: $primary-color;
   border-radius: 20px;
   width: 140px;
   align-items: center;
+  font-weight: bold;
 }
 .btn:hover{
   background-color: $primary-color;
   color: $white;
   transition: 0.03;
+  font-weight: bold;
 }
 
 @media (min-width: 768px){
 }
 
 @media (min-width: 1024px){
-.projects{
+.imagens{
   width: 95%
 }
 }
 
 @media (min-width: 1040px){
-.projects{
+  .projects{
+    margin-top: 50px;
+    margin-bottom: 140px;
+
+  }
+
+.imagens{
+  margin-top: 80px;
   width: 100%;
 }
 }
@@ -93,8 +107,9 @@ h2{
 .methodology{
     background-color: $primary-color;
 
-    .h2-header{
-        padding-top: 50px;
+    .h2-header h2{
+        @include font-h2;
+        color: white;
     }
     .top-line{
         border-top: 3px solid $white;

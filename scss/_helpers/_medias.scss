@@ -1,6 +1,6 @@
 
 // Media Query - Página 3: Seções
-@media screen and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 703px) {
   .row-st {
     flex-wrap: wrap-reverse;
   }
@@ -11,5 +11,16 @@
 
   .col {
     flex-basis: auto;
+  }
+
+  .general img {
+    @include wh-img(250px, 250px);
+  }
+}
+
+
+@media (min-width: 703px) and (max-width: 793px) {
+  .general img {
+    @include wh-img(275px, 275px);
   }
 }
