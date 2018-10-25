@@ -21,6 +21,10 @@
 }
 
 .projects{
+  margin: 50px 0;
+}
+
+.imagens{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -82,13 +86,20 @@ justify-content: center;
 }
 
 @media (min-width: 1024px){
-.projects{
+.imagens{
   width: 95%
 }
 }
 
 @media (min-width: 1040px){
-.projects{
+  .projects{
+    margin-top: 50px;
+    margin-bottom: 140px;
+
+  }
+
+.imagens{
+  margin-top: 80px;
   width: 100%;
 }
 }
