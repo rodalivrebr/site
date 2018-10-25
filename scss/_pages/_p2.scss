@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // NAVBAR
 * {
@@ -9,6 +10,29 @@
 
   body{
       font-family: $raleway;
+=======
+// $primary-color: #F04e23;
+// $white: #fff;
+
+// NAVBAR
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: $raleway;
+}
+.navbar {
+  background-color: $white;
+  .nav-link {
+      color: $primary-color;
+  }&-brand img {
+      padding: 0;
+      width: 50px;
+>>>>>>> Add styling to methodology section
   }
   .navbar {
     background-color: $white;
@@ -21,12 +45,13 @@
 }
 
 .projects{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .card{ 
+<<<<<<< HEAD
    width: 325px; 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,46 +76,71 @@
   }&-body{
     text-align: center;
   }
+=======
+ width: 325px; 
+ border-color: $white;
+ align-items: center;
+&-img-top{
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 200px;
+}&-title{
+  color: $primary-color;
+  font-size: 17px;
+  height: 37px;
+  align-items: center;
+  display: flex;
+}&-body{
+  text-align: center;
+}
+>>>>>>> Add styling to methodology section
 }
 
 .btn{
-    border: 1px solid $primary-color;
-    color: $primary-color;
-    border-radius: 20px;
-    width: 140px;
-    align-items: center;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  border-radius: 20px;
+  width: 140px;
+  align-items: center;
 }
 .btn:hover{
-    background-color: $primary-color;
-    color: $white;
-    transition: 0.03;
+  background-color: $primary-color;
+  color: $white;
+  transition: 0.03;
 }
-  
+
 @media (min-width: 768px){
 }
 
 @media (min-width: 1024px){
-  .projects{
-    width: 95%
-  }
+.projects{
+  width: 95%
+}
 }
 
 @media (min-width: 1040px){
-  .projects{
-    width: 100%;
-  }
+.projects{
+  width: 100%;
+}
 }
 
 // ABOUT SECTION
 h2{
+<<<<<<< HEAD
     text-transform: uppercase;
     color: $white;
     font-size:18px;  
+=======
+  text-transform: uppercase;
+  color: $white;
+  font-size:18px;  
+>>>>>>> Add styling to methodology section
 }
 .container{
-    max-width: 80%;
+  max-width: 80%;
 }
 .methodology{
+<<<<<<< HEAD
     background-color: $primary-color;
 
     .h2-header{
@@ -122,3 +172,36 @@ h2{
         color: $white;
     }
 }
+=======
+  background-color: $primary-color;
+
+  .h2-header{
+      padding-top: 50px;
+  }
+  .top-line{
+      border-top: 3px solid $white;
+      margin-top: 25px;
+      max-width: 50%;
+      min-width: 270px;
+  }
+  .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 50px 0 100px;
+      margin-top: 50px;
+  }
+  .container > .row{
+      align-items: flex-end;
+  }
+  
+  &-quote{
+      color: $white;
+      font-size: 36px;
+  }
+  p{
+      // margin: 50px 0 60px;
+      color: $white;
+  }
+}
+>>>>>>> Add styling to methodology section
