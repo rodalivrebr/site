@@ -6,14 +6,13 @@
       padding: 21px 88px;
       .author{
         color: $primary-color;
-        font-weight: bold;
+        font-weight: 900;
+        font-size: 0.8rem;
+        
       }
     }
   } 
 }
-
-
-
 
 
 .partners{
@@ -31,5 +30,32 @@
   .logo:hover{
   filter: grayscale(0%);
   
+  }
+}
+
+@media (max-width: 1024px){
+  .brief {
+    .line {
+      .column {
+        padding: 10px 44px;
+        
+      }
+    } 
+  }
+}
+
+@media (max-width: 425px){
+  .brief {
+    .line {
+      .column {
+        padding: 19px 0px;
+        
+      }
+    } 
+  }
+
+  .partners{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
