@@ -1,8 +1,5 @@
 .navbar {
-  background-color: $primary-color;
-
-  .navbar-nav .nav-item a.nav-link {
-    color: $white;
+    .navbar-nav .nav-item a.nav-link {
     margin: 0 27px;
     padding: 0px;
     position: relative;
@@ -60,4 +57,14 @@
       width: 60px;
     }
   }
+
+  &-orange .navbar-nav .nav-item a.nav-link{
+      background-color: $primary-color;
+      color: $white;
+  }
+  &-white .navbar-nav .nav-item a.nav-link {
+    background-color: $white;
+    color: $primary-color;
+  }
+
 }
