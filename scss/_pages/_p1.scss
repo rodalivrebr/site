@@ -66,7 +66,10 @@
 
 @media (min-width:768px) {
   .carousel {
-    
+    .carousel-inner img{
+      height: 50vh ;
+      object-fit: cover;
+    }
     .slide1 {
 
       img {
@@ -75,22 +78,24 @@
 
       .carousel-caption {
         padding: 0 30px;
-        
+        bottom: 0;
         ul{
-          margin-bottom: 5px;
+          margin-bottom: 0px;
         }
 
         li {
-          font-size: 16px;
+          font-size: 13px;
         }
 
         h1 {
-          font-size: 19px;
+          font-size: 15px;
+          margin-bottom: 3px;
         }
         
         p {
-          font-size: 15px;
+          font-size: 13px;
           text-align: center;
+          margin-bottom: 0;
         } 
       }
     }
@@ -101,23 +106,31 @@
 @media (min-width:1024px) {
 
   .carousel {
-
+    .carousel-inner {
+      img{
+        height: 67vh ;
+        object-fit: cover;
+        resize: both;
+      }
+    }
     .slide1 {
-           
+ 
       .carousel-caption {
+        margin-bottom: 0;
 
         li {
           padding: 0 7px;
-          font-size: 23px;
+          font-size: 22px;
         }
       
         h1 {
-          font-size: 30px;
+          font-size: 21px;
         }
           
         p {
-          font-size: 20px;
+          font-size: 18px;
           text-align: center;
+          margin-bottom: 0;
         }
       }
     } 
@@ -127,36 +140,50 @@
 // ---- Desktop 1440px ---- //
 @media(min-width:1440px) {
   .carousel {
+    .carousel-inner {
   
-    .slide1{
-      .carousel-caption {
-        color: $primary-color;
-        padding-bottom: 0px;
-
-        li{
-          list-style: none;
-          display: inline-block;
-          font-weight: bold;
-          padding: 0 15px;
-          text-align: center;
-          font-size: 40px;
-        }
-
-        ul {
-          padding: 0px;
-        }
-
-        h1 {
-          font-size: 36px;
-        }
-
-        p {
-          font-size: 30px;
-          text-align: center;
-        }
+      img{
+      height: 83vh ;
+      object-fit: cover;
+      padding: 7px;
+      resize: both;
       }
     }
-  }
+      .slide1{
+        .carousel-caption {
+          color: $primary-color;
+          padding-bottom: 0px;
+          margin-bottom: 38px;
+
+          li{
+            list-style: none;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0 15px;
+            text-align: center;
+            font-size: 25px;
+          }
+
+          ul {
+            padding: 0px;
+          }
+
+          h1 {
+            font-size: 28px;
+          }
+
+          p {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .slide2 .slide3{
+        max-height: 100vh;
+      }
+    }
+  
 }
   
 // ABOUT SECTION 
