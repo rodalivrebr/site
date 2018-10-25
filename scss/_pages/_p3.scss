@@ -1,9 +1,18 @@
 .general {
   font-size: 16px;
 
-  &_title {
+  &_line {
     border-top: 3px solid $secondary-color;
+    margin-top: 25px;
+    max-width: 47.5%;
+    min-width: 270px;
+  }
+
+  &_title {
     color: $secondary-color;
+    @extend %bolder-title;
+    text-transform: uppercase;
+    text-align: right;
   }
 }
 
@@ -11,6 +20,7 @@
 .group {
   &-title {
     text-transform: uppercase;
+    @extend %bolder-title;
   }
 }
 
@@ -23,6 +33,7 @@
 
   &_title {
     color: $secondary-color;
+    @extend %bolder-title;
   }
 
   &_text {
