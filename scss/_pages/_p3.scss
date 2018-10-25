@@ -55,7 +55,9 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, top)
       }
     }
 
@@ -73,7 +75,9 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover,right);
       }
     }
 
@@ -91,7 +95,9 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
@@ -109,7 +115,9 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
   }
@@ -132,7 +140,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
       }
     }
 
@@ -150,7 +158,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
       }
     }
   }
@@ -173,7 +181,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
       }
     }
 
@@ -191,7 +199,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
       }
     }
 
@@ -209,7 +217,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
       }
     }
 
@@ -227,7 +235,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
       }
     }
   }
@@ -250,7 +258,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
       }
     }
 
@@ -268,7 +276,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
       }
     }
 
@@ -286,7 +294,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(325px);
+        @include wh-img(325px, 325px);
       }
     }
 
@@ -304,7 +312,7 @@
 
       &_img {
         @extend %max-width;
-        @include width-img(300px);
+        @include wh-img(300px, 300px);
       }
     }
   }
