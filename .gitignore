@@ -76,10 +76,7 @@ typings/
 .fusebox/
 
 .sass-cache/
-<<<<<<< HEAD
-=======
-*.css
->>>>>>> Solução de conflitos entre as branches master e p3
+style.css
 *.css.map
 *.sass.map
 *.scss.map
