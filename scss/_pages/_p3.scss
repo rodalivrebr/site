@@ -1,0 +1,311 @@
+.general {
+  font-size: 16px;
+
+  &_title {
+    border-top: 3px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+
+.group {
+  &-title {
+    text-transform: uppercase;
+  }
+}
+
+
+.subject-one,
+.subject-two,
+.subject-three,
+.subject-four {
+  @include font-size(14px);
+
+  &_title {
+    color: $secondary-color;
+  }
+
+  &_text {
+    color: $text-color;
+  }
+}
+
+
+.subject-two,
+.subject-four {
+  background-color: #F4F4F4;
+}
+
+
+.subject-one {
+  @include font-size(14px);
+
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-two {
+      color: #B01A40;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+
+    &-three {
+      color: #B01A40;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-four {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+  }
+}
+
+
+.subject-two {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-two {
+      color: #B01A40;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+  }
+}
+
+
+.subject-three {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-two {
+      color: $secondary-color;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+
+    &-three {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-four {
+      color: $secondary-color;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+  }
+}
+
+
+.subject-four {
+  &_project {
+    &-one {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-two {
+      color: #B01A40;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+
+    &-three {
+      color: $secondary-color;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(325px);
+      }
+    }
+
+    &-four {
+      color: #DA5B30;
+      @include lg-flex();
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include width-img(300px);
+      }
+    }
+  }
+}

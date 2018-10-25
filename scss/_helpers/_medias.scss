@@ -1,0 +1,15 @@
+
+// Media Query - Página 3: Seções
+@media screen and (max-width: 425px) {
+  .row-st {
+    flex-wrap: wrap-reverse;
+  }
+
+  .row-nd {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-basis: auto;
+  }
+}
