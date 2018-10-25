@@ -33,7 +33,7 @@
 
 .subject-two,
 .subject-four {
-  background-color: #F4F4F4;
+  background-color: $background-color;
 }
 
 
@@ -42,8 +42,12 @@
 
   &_project {
     &-one {
-      color: #DA5B30;
       @include lg-flex();
+
+      &_title, 
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -62,8 +66,12 @@
     }
 
     &-two {
-      color: #B01A40;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -82,8 +90,12 @@
     }
 
     &-three {
-      color: #B01A40;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -101,9 +113,13 @@
       }
     }
 
-    &-four {
-      color: #DA5B30;
+    &-four {      
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -127,8 +143,12 @@
 .subject-two {
   &_project {
     &-one {
-      color: #DA5B30;
       @include lg-flex();
+
+      &_title, 
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -141,12 +161,18 @@
       &_img {
         @extend %max-width;
         @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, top);
       }
     }
 
     &-two {
-      color: #B01A40;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -159,6 +185,8 @@
       &_img {
         @extend %max-width;
         @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial)
       }
     }
   }
@@ -167,9 +195,13 @@
 
 .subject-three {
   &_project {
-    &-one {
-      color: #DA5B30;
+    &-one {      
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -182,6 +214,8 @@
       &_img {
         @extend %max-width;
         @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, right);
       }
     }
 
@@ -189,6 +223,11 @@
       color: $secondary-color;
       @include lg-flex();
 
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
       &_title {
         @include font-size(16px);
       }
@@ -200,12 +239,18 @@
       &_img {
         @extend %max-width;
         @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
-    &-three {
-      color: #DA5B30;
+    &-three {      
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -218,12 +263,19 @@
       &_img {
         @extend %max-width;
         @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
     &-four {
       color: $secondary-color;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -236,6 +288,8 @@
       &_img {
         @extend %max-width;
         @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
   }
@@ -244,9 +298,13 @@
 
 .subject-four {
   &_project {
-    &-one {
-      color: #DA5B30;
+    &-one {      
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -259,12 +317,18 @@
       &_img {
         @extend %max-width;
         @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
     &-two {
-      color: #B01A40;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -277,12 +341,18 @@
       &_img {
         @extend %max-width;
         @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
     &-three {
-      color: $secondary-color;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -295,12 +365,18 @@
       &_img {
         @extend %max-width;
         @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
 
     &-four {
-      color: #DA5B30;
       @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
 
       &_title {
         @include font-size(16px);
@@ -313,6 +389,8 @@
       &_img {
         @extend %max-width;
         @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
       }
     }
   }
