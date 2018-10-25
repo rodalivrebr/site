@@ -8,8 +8,18 @@
   font-size: $font-size;
 }
 
-@mixin width-img ($widht-img) {
+@mixin wh-img ($widht-img, $height-img) {
   width: $widht-img;
+  height: $height-img;
+}
+
+@mixin border-img ($border-radius) {
+  border-radius: $border-radius;
+}
+
+@mixin object-img ($object-fit, $object-position) {
+  object-fit: $object-fit;
+  object-position: $object-position;
 }
 
 @mixin lg-flex {
