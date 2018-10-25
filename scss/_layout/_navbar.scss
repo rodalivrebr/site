@@ -1,63 +1,113 @@
 .navbar {
-  background-color: $primary-color;
-
-  .navbar-nav .nav-item a.nav-link {
-    color: $white;
-    margin: 0 27px;
-    padding: 0px;
-    position: relative;
-
-    @media (min-width: 600px) {
-        margin: 0 30px;
-    }
-
-    @media (min-width: 576px) {
-
-        &:hover::before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 1;
-            margin-left: 50%;
-            background-color: white;
-            width: 50%;
-            height: 2px;
-            animation-name: showUnderline;
-            animation-duration: 0.3s;
+    .navbar-nav .nav-item a.nav-link {
+        margin: 0 27px;
+        padding: 0px;
+        position: relative;
+        
+        @media (min-width: 600px) {
+            margin: 0 30px;
         }
         
-        &:hover::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 1;
-            right: 0;
-            margin-right: 50%;
-            background-color: white;
-            width: 50%;
-            height: 2px;
-            animation-name: showUnderline;
-            animation-duration: 0.3s;
-        }
-    
-        @keyframes showUnderline{
-            0%{
-                width: 0%;
-            }
-            100%{
+        @media (min-width: 576px) {
+            
+            &:hover::before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 1;
+                margin-left: 50%;
+                background-color: white;
                 width: 50%;
+                height: 2px;
+                animation-name: showUnderline;
+                animation-duration: 0.3s;
+            }
+            
+            &:hover::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 1;
+                right: 0;
+                margin-right: 50%;
+                background-color: white;
+                width: 50%;
+                height: 2px;
+                animation-name: showUnderline;
+                animation-duration: 0.3s;
+            }
+            
+            @keyframes showUnderline{
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 50%;
+                }
             }
         }
     }
-  }
-
-  &-brand img {
-    padding: 0;
-    width: 80px;
-
-    @media (min-width: 768px) {
-      width: 60px;
+    
+    &-brand img {
+        padding: 0;
+        width: 80px;
+        
+        @media (min-width: 768px) {
+            width: 60px;
+        }
     }
-  }
+    
+    &-orange {
+        background-color: $primary-color;
+        .navbar-nav .nav-item a.nav-link{
+            color: $white;
+        }   
+    }
+    &-white{
+        background-color: $white;
+        .navbar-nav .nav-item a.nav-link {
+            color: $primary-color;
+            @media (min-width: 576px) {
+            
+                &:hover::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 1;
+                    margin-left: 50%;
+                    background-color: $primary-color;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 1;
+                    right: 0;
+                    margin-right: 50%;
+                    background-color: $primary-color;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                @keyframes showUnderline{
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        
+    } 
 }
