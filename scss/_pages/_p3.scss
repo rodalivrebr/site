@@ -83,7 +83,8 @@
         @extend %max-width;
         @include wh-img(325px, 325px);
         @extend %border-img;
-        @include object-img(cover, top)
+        @include object-img(cover, top);
+        @include border-gray();
       }
     }
 
@@ -108,6 +109,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover,right);
+        @include border-gray();
       }
     }
 
@@ -132,6 +134,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
 
@@ -156,6 +159,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
   }
@@ -185,6 +189,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, top);
+        @include border-white();
       }
     }
 
@@ -208,7 +213,8 @@
         @extend %max-width;
         @include wh-img(300px, 300px);
         @extend %border-img;
-        @include object-img(cover, initial)
+        @include object-img(cover, initial);
+        @include border-white();
       }
     }
   }
@@ -238,6 +244,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, right);
+        @include border-gray();
       }
     }
 
@@ -263,6 +270,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, left);
+        @include border-gray();
       }
     }
 
@@ -287,6 +295,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
 
@@ -312,6 +321,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, right);
+        @include border-gray();
       }
     }
   }
@@ -341,6 +351,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -365,6 +376,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -389,6 +401,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -413,6 +426,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
   }
