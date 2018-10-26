@@ -41,7 +41,6 @@
 .subject-two,
 .subject-three,
 .subject-four {
-  @include font-size(14px);
 
   &_title {
     color: $secondary-color;
@@ -50,6 +49,7 @@
 
   &_text {
     color: $text-color;
+    @include font-size(16px);
   }
 }
 
@@ -61,7 +61,6 @@
 
 
 .subject-one {
-  @include font-size(14px);
 
   &_project {
     &-one {
