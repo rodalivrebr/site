@@ -1,6 +1,29 @@
 .navbar {
-  background-color: $color-primary;
+    .navbar-nav .nav-item a.nav-link {
+        margin: 0 0px;
+        position: relative;
+        
+        @media (min-width: 666px) {
+            margin: 0 30px;
+        }
+    }
+    
+    &-brand img {
+        padding: 0;
+        width: 80px;
+        
+        @media (min-width: 768px) {
+            width: 60px;
+        }
+    }
+    
+    &-orange {
+        background-color: $primary-color;
+        .navbar-nav .nav-item a.nav-link{
+            color: $white;
+            border-bottom: 1px solid $white;
 
+<<<<<<< HEAD
   .navbar-nav .nav-item a.nav-link {
     color: $white;
     margin: 0 27px;
@@ -60,4 +83,100 @@
       width: 60px;
     }
   }
+=======
+            @media (min-width: 576px) {
+                border-bottom: none;
+                padding-bottom: 0px;
+
+                &:hover::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 1;
+                    margin-left: 50%;
+                    background-color: $white;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 1;
+                    right: 0;
+                    margin-right: 50%;
+                    background-color: $white;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                @keyframes showUnderline{
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 50%;
+                    }
+                }
+            }
+
+        }   
+    }
+    &-white{
+        background-color: $white;
+        .navbar-nav .nav-item a.nav-link {
+            color: $primary-color;
+            border-bottom: 1px solid $primary-color;
+
+            @media (min-width: 576px) {
+                border-bottom: none;
+                padding-bottom: 0px;
+
+                &:hover::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 1;
+                    margin-left: 50%;
+                    background-color: $primary-color;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                &:hover::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 1;
+                    right: 0;
+                    margin-right: 50%;
+                    background-color: $primary-color;
+                    width: 50%;
+                    height: 2px;
+                    animation-name: showUnderline;
+                    animation-duration: 0.3s;
+                }
+                
+                @keyframes showUnderline{
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        
+    } 
+>>>>>>> 3eb7aa980dc70d8c078829734a930330cdf88069
 }

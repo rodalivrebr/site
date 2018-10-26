@@ -1,0 +1,43 @@
+
+
+.brief {
+  .line {
+    .column {
+      padding: 21px 64px;
+      .author{
+        color: $primary-color;
+        font-weight: 900;
+        font-size: 0.8rem;
+        
+      }
+    }
+  } 
+}
+
+
+@media (max-width: 1024px){
+  .brief {
+    .line {
+      .column {
+         padding: 13px 21px;
+        
+      }
+    } 
+  }
+}
+
+@media (max-width: 425px){
+  .brief {
+    .line {
+      .column {
+        padding: 19px 0px;
+        
+      }
+    } 
+  }
+
+  .partners{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

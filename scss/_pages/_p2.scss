@@ -1,1 +1,140 @@
 
+// NAVBAR
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+      font-family: $raleway;
+  }
+
+.projects{
+  margin: 50px 0;
+}
+
+.imagens{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card{
+   width: 325px; 
+   border-color: $white;
+   align-items: center;
+  &-img-top{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    }&-title{
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 17px;
+    height: 37px;
+    align-items: center;
+    display: flex;
+  }&-body{
+    text-align: center;
+  }
+ width: 325px; 
+ border-color: $white;
+ align-items: center;
+&-img-top{
+  margin-top: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}&-title{
+  color: $primary-color;
+  font-size: 17px;
+  height: 37px;
+  align-items: center;
+  display: flex;
+}&-body{
+  text-align: center;
+}
+}
+
+.btn{
+  border: 1.2px solid $primary-color;
+  color: $primary-color;
+  border-radius: 20px;
+  width: 140px;
+  align-items: center;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: $primary-color;
+  color: $white;
+  transition: 0.03;
+  font-weight: bold;
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 1024px){
+.imagens{
+  width: 95%
+}
+}
+
+@media (min-width: 1040px){
+  .projects{
+    margin-top: 50px;
+    margin-bottom: 140px;
+
+  }
+
+.imagens{
+  margin-top: 80px;
+  width: 100%;
+}
+}
+
+// ABOUT SECTION
+h2{
+    text-transform: uppercase;
+    color: $white;
+    font-size:18px;  
+}
+.container{
+  max-width: 80%;
+}
+.methodology{
+    background-color: $primary-color;
+
+    .h2-header h2{
+        @include font-h2;
+        color: white;
+    }
+    .top-line{
+        border-top: 3px solid $white;
+        margin-top: 25px;
+        max-width: 50%;
+        min-width: 270px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 50px 0 100px;
+        margin-top: 50px;
+    }
+    .container > .row{
+        align-items: flex-end;
+    }
+    
+    &-quote{
+        color: $white;
+        font-size: 36px;
+    }
+    p{
+        // margin: 50px 0 60px;
+        color: $white;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,26 @@
+
+// Media Query - Página 3: Seções
+@media (min-width: 320px) and (max-width: 703px) {
+  .row-st {
+    flex-wrap: wrap-reverse;
+  }
+
+  .row-nd {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-basis: auto;
+  }
+
+  .general img {
+    @include wh-img(250px, 250px);
+  }
+}
+
+
+@media (min-width: 704px) and (max-width: 793px) {
+  .general img {
+    @include wh-img(275px, 275px);
+  }
+}

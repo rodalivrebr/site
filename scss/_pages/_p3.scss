@@ -1,0 +1,420 @@
+.general {
+  font-size: 16px;
+
+  &_line {
+    border-top: 3px solid $secondary-color;
+    margin-top: 25px;
+    max-width: 47.5%;
+    min-width: 270px;
+  }
+
+  &_title {
+    color: $secondary-color;
+    @extend %bolder-title;
+    text-transform: uppercase;
+    text-align: right;
+  }
+}
+
+.h2-header h2{
+  @include font-h2;
+  color: $secondary-color;
+}
+
+.top-line{
+  border-top: 3px solid $secondary-color;
+  margin-top: 25px;
+  max-width: 50%;
+  min-width: 270px;
+  margin-bottom: 35px;
+}
+
+.group {
+  &-title {
+    text-transform: uppercase;
+    @extend %bolder-title;
+  }
+}
+
+
+.subject-one,
+.subject-two,
+.subject-three,
+.subject-four {
+  @include font-size(14px);
+
+  &_title {
+    color: $secondary-color;
+    @extend %bolder-title;
+  }
+
+  &_text {
+    color: $text-color;
+  }
+}
+
+
+.subject-two,
+.subject-four {
+  background-color: $background-color;
+}
+
+
+.subject-one {
+  @include font-size(14px);
+
+  &_project {
+    &-one {
+      @include lg-flex();
+
+      &_title, 
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, top)
+      }
+    }
+
+    &-two {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover,right);
+      }
+    }
+
+    &-three {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+
+    &-four {      
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+  }
+}
+
+
+.subject-two {
+  &_project {
+    &-one {
+      @include lg-flex();
+
+      &_title, 
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, top);
+      }
+    }
+
+    &-two {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial)
+      }
+    }
+  }
+}
+
+
+.subject-three {
+  &_project {
+    &-one {      
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, right);
+      }
+    }
+
+    &-two {
+      color: $secondary-color;
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, left);
+      }
+    }
+
+    &-three {      
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+
+    &-four {
+      color: $secondary-color;
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, right);
+      }
+    }
+  }
+}
+
+
+.subject-four {
+  &_project {
+    &-one {      
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+
+    &-two {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+
+    &-three {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $quaternary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(325px, 325px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+
+    &-four {
+      @include lg-flex();
+
+      &_title,
+      &_text {
+        color: $tertiary-color;
+      }
+
+      &_title {
+        @include font-size(16px);
+      }
+
+      &_align-img {
+        @extend %align-img;
+      }
+
+      &_img {
+        @extend %max-width;
+        @include wh-img(300px, 300px);
+        @extend %border-img;
+        @include object-img(cover, initial);
+      }
+    }
+  }
+}
