@@ -41,7 +41,6 @@
 .subject-two,
 .subject-three,
 .subject-four {
-  @include font-size(14px);
 
   &_title {
     color: $secondary-color;
@@ -50,6 +49,7 @@
 
   &_text {
     color: $text-color;
+    @include font-size(16px);
   }
 }
 
@@ -61,7 +61,6 @@
 
 
 .subject-one {
-  @include font-size(14px);
 
   &_project {
     &-one {
@@ -84,7 +83,8 @@
         @extend %max-width;
         @include wh-img(325px, 325px);
         @extend %border-img;
-        @include object-img(cover, top)
+        @include object-img(cover, top);
+        @include border-gray();
       }
     }
 
@@ -109,6 +109,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover,right);
+        @include border-gray();
       }
     }
 
@@ -133,6 +134,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
 
@@ -157,6 +159,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
   }
@@ -186,6 +189,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, top);
+        @include border-white();
       }
     }
 
@@ -209,7 +213,8 @@
         @extend %max-width;
         @include wh-img(300px, 300px);
         @extend %border-img;
-        @include object-img(cover, initial)
+        @include object-img(cover, initial);
+        @include border-white();
       }
     }
   }
@@ -239,6 +244,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, right);
+        @include border-gray();
       }
     }
 
@@ -264,6 +270,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, left);
+        @include border-gray();
       }
     }
 
@@ -288,6 +295,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-gray();
       }
     }
 
@@ -313,6 +321,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, right);
+        @include border-gray();
       }
     }
   }
@@ -342,6 +351,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -366,6 +376,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -390,6 +401,7 @@
         @include wh-img(325px, 325px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
 
@@ -414,6 +426,7 @@
         @include wh-img(300px, 300px);
         @extend %border-img;
         @include object-img(cover, initial);
+        @include border-white();
       }
     }
   }

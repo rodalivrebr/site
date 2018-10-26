@@ -17,6 +17,14 @@
   border-radius: $border-radius;
 }
 
+@mixin border-gray {
+  border: .1px solid #dbdbdb;
+}
+
+@mixin border-white {
+  border: .1px solid $white;
+}
+
 @mixin object-img ($object-fit, $object-position) {
   object-fit: $object-fit;
   object-position: $object-position;
