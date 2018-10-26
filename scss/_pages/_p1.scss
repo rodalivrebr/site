@@ -6,6 +6,14 @@
 .carousel {
   padding-bottom: 0px;
 
+  .carousel-inner {
+    img{
+    height: 41vh ;
+    object-fit: cover;
+    resize: both;
+    }
+  }
+
   .slide1 {
 
    img {
@@ -99,10 +107,6 @@
         } 
       }
     }
-
-    .slide2{
-      background-image: linear-gradient(to )
-    }
   } 
 }
 
@@ -178,11 +182,9 @@
 @media(min-width:1440px) {
   .carousel {
     .carousel-inner {
-  
       img{
       height: 83vh ;
       object-fit: cover;
-      padding: 7px;
       resize: both;
       }
     }
