@@ -3,7 +3,7 @@
 .brief {
   .line {
     .column {
-      padding: 21px 88px;
+      padding: 21px 64px;
       .author{
         color: $primary-color;
         font-weight: 900;
@@ -15,29 +15,11 @@
 }
 
 
-.partners{
-  display: flex;
-  justify-content: center;
-  .logo{
-    filter: grayscale(100%);
-
-  }
-
-
-}
-
-.partners{
-  .logo:hover{
-  filter: grayscale(0%);
-  
-  }
-}
-
 @media (max-width: 1024px){
   .brief {
     .line {
       .column {
-        padding: 10px 44px;
+         padding: 13px 21px;
         
       }
     } 
