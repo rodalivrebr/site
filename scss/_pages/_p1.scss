@@ -3,6 +3,7 @@
 // ---- HEADER ---- //
 
 //---- 425px ---- //
+
 .carousel {
   padding-bottom: 0px;
 
@@ -112,6 +113,7 @@
 }
 
 // ---- Tablet 1024px ---- //
+
 @media (min-width:1024px) {
 
   .carousel {
@@ -146,6 +148,7 @@
     } 
   }
 }
+
 // ---- Desktop 1366px ---//
 
 @media (min-width:1366px) {
@@ -180,7 +183,9 @@
     } 
   }
 }
+
 // ---- Desktop 1440px ---- //
+
 @media(min-width:1440px) {
   .carousel {
     .carousel-inner {
@@ -190,41 +195,37 @@
       resize: both;
       }
     }
-      .slide1{
-        .carousel-caption {
-          color: $primary-color;
-          padding-bottom: 0px;
-          margin-bottom: 38px;
+    .slide1{
+      .carousel-caption {
+        color: $primary-color;
+        padding-bottom: 0px;
+        margin-bottom: 38px;
 
-          li{
-            list-style: none;
-            display: inline-block;
-            font-weight: bold;
-            padding: 0 15px 4px;
-            text-align: center;
-            font-size: 23px;
-          }
+        li{
+          list-style: none;
+          display: inline-block;
+          font-weight: bold;
+          padding: 0 15px 4px;
+          text-align: center;
+          font-size: 23px;
+        }
 
-          ul {
-            padding: 0px;
-          }
+        ul {
+          padding: 0px;
+        }
 
-          h1 {
-            font-size: 24x;
-          }
+        h1 {
+          font-size: 24x;
+        }
 
-          p {
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: 0;
-          }
+        p {
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 0;
         }
       }
-      // .slide2 .slide3{
-      //   max-height: 100vh;
-      // }
     }
-  
+  }
 }
   
 // ABOUT SECTION 
